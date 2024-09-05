@@ -1,5 +1,119 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+/* nav start  */
+header {
+  padding: 50px 240px;
+  background: rgba(255, 144, 14, 0.1);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+nav li {
+  list-style: none;
+  margin-right: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+nav li:last-child {
+  margin-right: 0;
+}
+nav li a {
+  text-decoration: none;
+  color: #424242;
+}
+/* nav banner start  */
+.nav-banner-info {
+  max-width: 862px;
+  margin: 50px auto;
+  text-align: center;
+}
+.nav-banner-title {
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.nav-banner-text {
+  color: #727272;
+  font-size: 1rem;
+  margin: 30px 0px;
+}
+.nav-banner-btn {
+  padding: 20px 25px;
+  border-radius: 8px;
+  background: #ff900e;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+.nav-banner img {
+  width: 100%;
+  border-radius: 10px;
+}
+/* responsive media queries */
+@media screen and (max-width: 576px) {
+  /* header start  */
+  header {
+    padding: 20px;
+  }
+  .nav-logo{
+    font-size: 2rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    margin-top: 30px;
+  }
+  nav li{
+    margin-right:14px;
+  }
+  .nav-banner-title {
+    font-size: 2.5rem;
+  }
+  .nav-banner-btn{
+    font-size: 1rem;
+  }
+}
+/* responsive media queries for mid device*/
+@media screen and (min-width: 576px) and (max-width:960px){
+  /* header start  */
+  header {
+    padding: 50px;
+  }
+  .nav-logo{
+    font-size: 2rem;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav > ul {
+    margin-top: 30px;
+  }
+  nav li{
+    margin-right:20px;
+  }
+  .nav-banner-title {
+    font-size: 2.5rem;
+  }
+  .nav-banner-btn{
+    font-size: 1rem;
+  }
 }
