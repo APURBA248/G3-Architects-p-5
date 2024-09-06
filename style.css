@@ -22,7 +22,6 @@ nav {
 }
 nav > ul {
   display: flex;
-  
 }
 nav li {
   list-style: none;
@@ -82,21 +81,21 @@ main {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
-.team-img-container img{
+.team-img-container img {
   width: 100%;
   border-radius: 10px;
 }
-.team-title{
+.team-title {
   color: #727272;
   font-size: 2.8rem;
   font-weight: 500;
 }
-.of-our{
+.of-our {
   color: #131313;
   font-weight: 700;
 }
-.team-features{
-  color: #FF900E;
+.team-features {
+  color: #ff900e;
   font-weight: 700;
 }
 .team-text {
@@ -105,21 +104,45 @@ main {
   font-weight: 400;
   margin: 30px 0px;
 }
- /* Some Facts start */
- .facts-container{
+/* Some Facts start */
+.facts-container {
   margin: 100px 0;
- }
- .facts-title{
+}
+.facts-title {
   color: #131313;
   font-size: 2.8rem;
   font-weight: 700;
- }
- .facts-text{
+}
+.facts-text {
   color: #727272;
   font-size: 1rem;
   font-weight: 400;
   margin-top: 20px;
- }
+}
+/* cards-sec-start  */
+.card-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6rem;
+}
+.card {
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+  min-height: 240px;
+  min-width: 240px;
+  padding: 50px;
+}
+.card-number{
+  color: #424242;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+.card-title{
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 600;
+}
 /* responsive media queries */
 @media screen and (max-width: 576px) {
   /* header start  */
@@ -145,15 +168,19 @@ main {
     font-size: 1rem;
   }
   /* main start  */
-  .team-container{
+  .team-container {
     flex-direction: column-reverse;
     text-align: center;
   }
-  .team-img-container{
-    grid-template-columns:1fr;
+  .team-img-container {
+    grid-template-columns: 1fr;
     margin-top: 30px;
   }
-
+  /* cards-sec-start  */
+  .card-container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
 }
 /* responsive media queries for mid device*/
 @media screen and (min-width: 576px) and (max-width: 960px) {
@@ -180,12 +207,16 @@ main {
     font-size: 1rem;
   }
   /* main start  */
-  .team-container{
+  .team-container {
     flex-direction: column-reverse;
     text-align: center;
   }
-  .team-img-container{
+  .team-img-container {
     margin-top: 50px;
   }
+  /* cards-sec-start  */
+  .card-container{
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+  }
 }
-
