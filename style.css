@@ -22,7 +22,7 @@ nav {
 }
 nav > ul {
   display: flex;
-  flex-wrap: wrap;
+  
 }
 nav li {
   list-style: none;
@@ -30,9 +30,7 @@ nav li {
   font-size: 1.2rem;
   font-weight: 500;
 }
-nav li:last-child {
-  margin-right: 0;
-}
+
 nav li a {
   text-decoration: none;
   color: #424242;
@@ -67,13 +65,53 @@ nav li a {
   width: 100%;
   border-radius: 10px;
 }
+/* main start  */
+main {
+  max-width: 1440px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+/* team-container start */
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.team-img-container img{
+  width: 100%;
+  border-radius: 10px;
+}
+.team-title{
+  color: #727272;
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.of-our{
+  color: #131313;
+  font-weight: 700;
+}
+.team-features{
+  color: #FF900E;
+  font-weight: 700;
+}
+.team-text {
+  color: #727272;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 30px 0px;
+}
 /* responsive media queries */
 @media screen and (max-width: 576px) {
   /* header start  */
   header {
     padding: 20px;
   }
-  .nav-logo{
+  .nav-logo {
     font-size: 2rem;
   }
   nav {
@@ -82,23 +120,33 @@ nav li a {
   nav > ul {
     margin-top: 30px;
   }
-  nav li{
-    margin-right:14px;
+  nav li {
+    margin: 10px;
   }
   .nav-banner-title {
     font-size: 2.5rem;
   }
-  .nav-banner-btn{
+  .nav-banner-btn {
     font-size: 1rem;
   }
+  /* main start  */
+  .team-container{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .team-img-container{
+    grid-template-columns:1fr;
+    margin-top: 30px;
+  }
+
 }
 /* responsive media queries for mid device*/
-@media screen and (min-width: 576px) and (max-width:960px){
+@media screen and (min-width: 576px) and (max-width: 960px) {
   /* header start  */
   header {
     padding: 50px;
   }
-  .nav-logo{
+  .nav-logo {
     font-size: 2rem;
   }
   nav {
@@ -107,13 +155,22 @@ nav li a {
   nav > ul {
     margin-top: 30px;
   }
-  nav li{
-    margin-right:20px;
+  nav li {
+    margin: 20px;
   }
   .nav-banner-title {
     font-size: 2.5rem;
   }
-  .nav-banner-btn{
+  .nav-banner-btn {
     font-size: 1rem;
   }
+  /* main start  */
+  .team-container{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .team-img-container{
+    margin-top: 50px;
+  }
 }
+
