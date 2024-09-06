@@ -143,6 +143,17 @@ main {
   font-size: 1rem;
   font-weight: 600;
 }
+/* Sponsors-sec-start */
+.sponsors-container{
+  text-align: center; 
+  margin: 100px 0;
+}
+.sponsors-img-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
 /* responsive media queries */
 @media screen and (max-width: 576px) {
   /* header start  */
@@ -180,6 +191,11 @@ main {
   .card-container{
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+  /* Sponsors-sec-start */
+  .sponsors-img-container{
+   flex-direction: column;
+   gap: 1.5rem;
   }
 }
 /* responsive media queries for mid device*/
@@ -219,4 +235,9 @@ main {
     grid-template-columns: repeat(2,1fr);
     gap: 3rem;
   }
+  /* Sponsors-sec-start */
+  .sponsors-img-container{
+    flex-direction: column;
+    gap: 1.5rem;
+   }
 }
